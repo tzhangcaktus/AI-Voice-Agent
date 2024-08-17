@@ -128,7 +128,7 @@ def main():
                     messages = [{"role": "system", "content": prompt}]
                     messages.extend(conversation_memory)
                     chat_completion = client.chat.completions.create(
-                        model="gpt-3.5-turbo",
+                        model="gpt-4o",
                         messages=messages
                     )
                     print(chat_completion)
